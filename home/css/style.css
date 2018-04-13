@@ -1,0 +1,30 @@
+#catagory{
+	padding-top: 15px;
+}
+#advert img{
+	width: 100px;
+	height: 100px;
+}
+.glyphicon-link {
+    color:blue;
+    font-size:90px;
+}
+.glyphicon-heart-empty{
+	color: red;
+	font-size:90px;
+}
+.glyphicon-yen{
+	color: yellow;
+	font-size:90px;
+}
+.wenzi{
+	padding-top:15px ;
+}
+.footer .card{
+	background: #3C3C3C;
+}
+.btn-secondary {
+    color: #000000;
+    background-color: azure;
+    border-color: #CCCCCC;
+}
