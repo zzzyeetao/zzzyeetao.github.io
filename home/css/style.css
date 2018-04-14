@@ -58,3 +58,6 @@
 .goods-list-item{
 	padding-top:15px;
 }
+.custom-file-label::after{
+	content: "浏览";
+}

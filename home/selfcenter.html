@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>个人中心</title>
+		<!--引入css样式（CDN）-->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+		<!--引入字符样式-->
+		<link rel="stylesheet" type="text/css" href="css/open-iconic.css"/>
+		<!--引入自定义样式-->
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<!--引入jQuery和JavaScript（CDN）必须的-->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>		
+	</head>
+	<body>
+		<div class="container-fluid">
+			<!--全部内容-->
+			<div class="card text-center">
+			  <!--表头部分-->
+			  <div class="card-header">
+			    <ul class="nav nav-tabs card-header-tabs float-left">
+			      <li class="nav-item">
+			        <a class="nav-link disabled" href="#">欢迎</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link active" href="#">Thomason</a>
+			      </li>
+	        
+			   </ul>
+					<div class="float-right">
+						<button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"> 反馈 </button>
+						<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <h5 class="modal-title" id="exampleModalLabel">新建信息</h5>
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						          <span aria-hidden="true">&times;</span>
+						        </button>
+						      </div>
+						      <div class="modal-body">
+						        <form>
+						          <div class="form-group">
+						            <label for="recipient-name" class="col-form-label">接收者</label>
+						            <input type="text" class="form-control" id="recipient-name">
+						          </div>
+						          <div class="form-group">
+						            <label for="message-text" class="col-form-label">输入建议</label>
+						            <textarea class="form-control" id="message-text"></textarea>
+						          </div>
+						        </form>
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+						        <button type="button" class="btn btn-primary">发送</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>	
+					</div>	
+					
+				  <form class="form-inline float-right">
+				    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+				    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				  </form>
+				 </div>  
+			   <!--表头部分结束-->
+			  <!--主体部分-->
+			  <div class="card-body">
+				<div class="row">
+					<!--个人中心导航-->
+  				  <div class="col-4">
+						<img src="./img/linux.jpg"/>
+						<h5 class="card-title">Thomason</h5>
+				    <div class="list-group" id="list-tab" role="tablist">
+				      <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">基本信息</a>
+				      <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">我的仓库</a>
+				      <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">消息列表<span class="badge badge-primary badge-pill float-right">7</span></a>
+				      <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">设置</a>
+				    </div>
+				  </div>						
+					<!--个人中心导航结束-->
+					<!--具体内容-->
+				  <div class="col-8">
+				    <div class="tab-content" id="nav-tabContent">
+				      <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list"> <!--基本信息-->
+						<table class="table">
+						  <tbody>
+						    <tr>
+						      <th scope="row">头像</th>
+						      <td><img src="./img/linux.jpg"/></td>
+						    </tr>
+						    <tr>
+						      <th scope="row">昵称</th>
+						      <td>Thomason</td>
+						    </tr>
+						    <tr>
+						      <th scope="row">QQ</th>
+						      <td>240221211</td>
+						    </tr>
+						    <tr>
+						      <th scope="row">手机</th>
+						      <td>13800138000</td>
+						    </tr>
+						    <tr>
+						      <th scope="row">地址</th>
+						      <td>梅苑八号楼</td>
+						    </tr>
+						  </tbody>
+						</table>				      	
+				      </div>
+				      <!--我的仓库-->
+				      <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list"> 
+				      	<!--个人收藏-->
+				      	<h3>个人收藏</h3>
+						<table class="table table-hover">
+						  <thead>
+						    <tr>
+						      <th scope="col">#</th>
+						      <th scope="col">商品名称</th>
+						      <th scope="col">持有者</th>
+						      <th scope="col">价格</th>
+						    </tr>
+						  </thead>
+						  <tbody>
+						    <tr>
+						      <th scope="row">1</th>
+						      <td>阿迪达斯</td>
+						      <td>Mike</td>
+						      <td>500</td>
+						    </tr>
+						    <tr>
+						      <th scope="row">2</th>
+						      <td>洗衣液</td>
+						      <td>齐心</td>
+						      <td>50</td>
+						    </tr>
+						    <tr>
+						      <th scope="row">#</th>
+						      <td colspan="2">合计</td>
+						      <td>550</td>
+						    </tr>
+						  </tbody>
+						</table>				      	
+				      	<!--个人收藏结束-->
+			      	
+				      	<!--已确认订单-->
+				      	<h3>已确认的订单</h3>
+						<table class="table table-hover">
+						  <thead>
+						    <tr>
+						      <th scope="col">#</th>
+						      <th scope="col">商品名称</th>
+						      <th scope="col">联系方式</th>
+						      <th scope="col">地址</th>
+						      <th scope="col">持有者</th>
+						      <th scope="col">价格</th>
+						    </tr>
+						  </thead>
+						  <tbody>
+						    <tr>
+						      <th scope="row">1</th>
+						      <td>鼠标双飞燕</td>
+						      <td>13800138000</td>
+						      <td>河北唐山</td>
+						      <td>孙悟空</td>
+						      <td>30</td>
+						    </tr>
+						    <tr>
+						      <th scope="row">2</th>
+						      <td>鼠标双飞燕</td>
+						      <td>13800138000</td>
+						      <td>河北唐山</td>
+						      <td>孙悟空</td>
+						      <td>30</td>
+						    </tr>
+						    <tr>
+						      <th scope="row">#</th>
+						      <td colspan="4">合计</td>
+						      <td>60</td>
+						    </tr>
+						  </tbody>
+						</table>					      	
+				      	<!--已确认订单结束-->
+				      </div>
+				      <!--我的仓库结束-->
+				      <!--消息列表-->
+				      <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list"> 
+						<div class="list-group">
+						  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+						    <div class="d-flex w-100 justify-content-between">
+						      <h5 class="mb-1">主题：关于未来</h5>
+						      <small>3 天前</small>
+						    </div>
+						    <p class="mb-1">不能因为现实复杂而放弃梦想，不能因为理想远大而放弃追求</p>
+						    <small>来自: 习近平</small>
+						  </a>
+						  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+						    <div class="d-flex w-100 justify-content-between">
+						      <h5 class="mb-1">主题：关于未来</h5>
+						      <small>3 天前</small>
+						    </div>
+						    <p class="mb-1">不能因为现实复杂而放弃梦想，不能因为理想远大而放弃追求</p>
+						    <small>来自: 习近平</small>
+						  </a>
+						  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+						    <div class="d-flex w-100 justify-content-between">
+						      <h5 class="mb-1">主题：关于未来</h5>
+						      <small>3 天前</small>
+						    </div>
+						    <p class="mb-1">不能因为现实复杂而放弃梦想，不能因为理想远大而放弃追求</p>
+						    <small>来自: 习近平</small>
+						  </a>
+						  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+						    <div class="d-flex w-100 justify-content-between">
+						      <h5 class="mb-1">主题：关于未来</h5>
+						      <small>3 天前</small>
+						    </div>
+						    <p class="mb-1">不能因为现实复杂而放弃梦想，不能因为理想远大而放弃追求</p>
+						    <small>来自: 习近平</small>
+						  </a>
+						  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+						    <div class="d-flex w-100 justify-content-between">
+						      <h5 class="mb-1">最新消息</h5>
+						      <small>3 天前</small>
+						    </div>
+						    <p class="mb-1">不能因为现实复杂而放弃梦想，不能因为理想远大而放弃追求</p>
+						    <small>来自: 习近平</small>
+						  </a>
+						  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+						    <div class="d-flex w-100 justify-content-between">
+						      <h5 class="mb-1">最新消息</h5>
+						      <small>3 天前</small>
+						    </div>
+						    <p class="mb-1">不能因为现实复杂而放弃梦想，不能因为理想远大而放弃追求</p>
+						    <small>来自: 习近平</small>
+						  </a>
+						  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+						    <div class="d-flex w-100 justify-content-between">
+						      <h5 class="mb-1">最新消息</h5>
+						      <small>3 天前</small>
+						    </div>
+						    <p class="mb-1">不能因为现实复杂而放弃梦想，不能因为理想远大而放弃追求</p>
+						    <small>来自: 习近平</small>
+						  </a>
+					    </div>
+				      </div>
+				      <!--消息列表结束-->
+				      <!--设置-->
+				      <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+						<table class="table">
+						  <tbody>
+						    <tr>
+						      <th scope="row">头像</th>
+						      <td><input type="file" class="form-control-file" id="exampleInputFile"></td>
+						    </tr>
+						    <tr>
+						      <th scope="row">昵称</th>
+						      <td><input type="text" class="form-control" placeholder="填写用户名，不要出现特殊符号" aria-label="填写用户名，不要出现特殊符号"></td>
+						    </tr>
+						    <tr>
+						      <th scope="row">QQ</th>
+						      <td><input type="text" class="form-control" placeholder="输入 QQ 号" aria-label="输入 QQ 号"></td>
+						    </tr>
+						    <tr>
+						      <th scope="row">手机</th>
+						      <td><input type="text" class="form-control" placeholder="输入 11 位手机号" aria-label="输入 11 位手机号"></td>
+						    </tr>
+						    <tr>
+						      <th scope="row">地址</th>
+						      <td><input type="text" class="form-control" placeholder="请尽量具体" aria-label="请尽量具体"></td>
+						    </tr>
+						  </tbody>
+						</table>
+						</div>
+						
+				      </div>
+				      <!--设置结束-->
+				    </div>
+				  </div>
+					<!--具体内容结束-->  
+				</div>
+			  </div>
+			  <!--主体内容结束-->
+			  </div>
+			  <!--全部内容结束-->
+		</div>
+		<!--container结束-->
+		<!--页面右下角-->
+		<div class="fixed-bottom">
+			<nav class="nav flex-column">
+			  <a class="nav-link" href="../index.html"><span class="oi" id="backToUp" data-glyph="home" title="回到首页"></span></a> 	 <!--此处引用open-icons图标 -->		  
+			</nav>	
+			
+		</div>
+		<!--页面右下角结束-->
+	</body>
+</html>
