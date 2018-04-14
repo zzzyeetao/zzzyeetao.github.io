@@ -5,20 +5,44 @@
 	width: 100px;
 	height: 100px;
 }
-.glyphicon-link {
+#tradeNav{
+	display: inline-block;
+	padding-top: 40px;
+}
+#tradeNagination{
+	text-align: center;
+}
+#uploadItems{
+	color: chartreuse;
+	font-size:30px;
+	padding-left: 5px;
+}
+#commonLink {
     color:blue;
     font-size:90px;
 }
-.glyphicon-heart-empty{
+#gongyiLink{
 	color: red;
 	font-size:90px;
 }
-.glyphicon-yen{
+#secondLink{
 	color: yellow;
 	font-size:90px;
 }
+#backToUp{
+	color: white;
+	font-size:35px;
+	background: greenyellow;
+	float:right;
+	padding: 0.5%;
+	
+}
+.itemPrice{
+	color: red;
+	font-size:25px;
+}
 .wenzi{
-	padding-top:15px ;
+	padding-top:10px ;
 }
 .footer .card{
 	background: #3C3C3C;
@@ -27,4 +51,10 @@
     color: #000000;
     background-color: azure;
     border-color: #CCCCCC;
+}
+.section{
+	padding-top: 8px;
+}
+.goods-list-item{
+	padding-top:15px;
 }
